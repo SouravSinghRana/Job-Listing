@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Card, Label, Button, Transition} from 'semantic-ui-react';
+import { Card, Label, Button, Transition , Image} from 'semantic-ui-react';
 import ReactMarkdown from 'react-markdown';
 
 const Job = ({job}) => {
@@ -24,7 +24,9 @@ const Job = ({job}) => {
               <ReactMarkdown source={job.how_to_apply} />
             </div>
           </div>
-          <img height="35%" width="20%" alt={job.company} src={job.company_logo} />
+          <div className="d-none d-md-block">
+            <Image size='small' alt={job.company} src={job.company_logo} />
+          </div>
         </div>
           <Button
             onClick={() => setOpen(prevOpen => !prevOpen)}
