@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Pagination, Icon } from 'semantic-ui-react';
 import { Pagination } from 'react-bootstrap';
 
 const JobsPagination = ({ page, setPage , hasNextPage}) => {

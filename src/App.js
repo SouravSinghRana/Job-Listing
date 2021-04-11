@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import useFetchJobs from './useFetchJobs';
-import { Container } from 'semantic-ui-react'
+import { Container } from 'react-bootstrap'
 import Job from './Job';
 import JobsPagination from './JobsPagination';
 import SearchForm from './SearchForm';
@@ -11,7 +11,6 @@ const  App = () => {
   const [page , setPage] = useState(1);
  
   const { jobs, loading, error, hasNextPage } = useFetchJobs(params , page);
-  // console.log(jobs);
 
   const handleParamChange = (e) => {
     const param = e.target.name
