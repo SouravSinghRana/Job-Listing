@@ -13,7 +13,7 @@ const ACTIONS = {
   UPDATE_HAS_NEXT_PAGE: 'update-has-next-page'
 }
 
-const BASE_URL = "https://jobs.github.com/positions.json" ; 
+const BASE_URL = "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json" ; 
 // "https://remotive.io/api/remote-jobs"
 //https://thingproxy.freeboard.io/fetch/
 
